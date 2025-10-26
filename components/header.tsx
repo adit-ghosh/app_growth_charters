@@ -2,6 +2,7 @@
 
 import { Menu, Bell, Settings } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 interface HeaderProps {
   onMenuClick: () => void
@@ -24,6 +25,7 @@ export function Header({ onMenuClick }: HeaderProps) {
           <button className="p-2 hover:bg-muted rounded-lg transition-colors">
             <Bell className="w-5 h-5 text-foreground" />
           </button>
+          <ThemeToggle />
           <button className="p-2 hover:bg-muted rounded-lg transition-colors">
             <Settings className="w-5 h-5 text-foreground" />
           </button>
