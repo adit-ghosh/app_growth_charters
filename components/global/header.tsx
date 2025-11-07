@@ -1,8 +1,8 @@
 "use client"
 
 import { Menu, Bell, Settings } from "lucide-react"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/base/avatar"
+import { ThemeToggle } from "@/components/global/theme-toggle"
 
 interface HeaderProps {
   onMenuClick: () => void

@@ -2,8 +2,8 @@
 
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { DashboardOverview } from "@/components/dashboard-overview"
+import { DashboardLayout } from "@/components/global/dashboard-layout"
+import { DashboardOverview } from "@/components/global/dashboard-overview"
 
 export default function Home() {
   const router = useRouter()

@@ -1,7 +1,7 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/base/card"
+import { Button } from "@/components/base/button"
 import { ArrowRight, Briefcase } from "lucide-react"
 
 const recommendations = [

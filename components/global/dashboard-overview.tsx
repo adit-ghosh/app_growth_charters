@@ -1,10 +1,10 @@
 "use client"
 
-import { ScoreCard } from "@/components/score-card"
-import { StrengthPentagon } from "@/components/strength-pentagon"
-import { CareerRecommendations } from "@/components/career-recommendations"
-import { ProgressTracking } from "@/components/progress-tracking"
-import { RecentActivity } from "@/components/recent-activity"
+import { ScoreCard } from "@/components/dashboard-home/score-card"
+import { StrengthPentagon } from "@/components/dashboard-home/strength-pentagon"
+import { CareerRecommendations } from "@/components/global/career-recommendations"
+import { ProgressTracking } from "@/components/global/progress-tracking"
+import { RecentActivity } from "@/components/global/recent-activity"
 
 export function DashboardOverview() {
   return (
