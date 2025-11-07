@@ -303,7 +303,7 @@ function FormSection({ onBack, isMobile = false }: { onBack: () => void; isMobil
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className={`flex-1 ${isMobile ? "h-[38px] px-3 text-sm" : "h-[52px] px-4"} border border-[#e6e7e9] rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#2f5f38]`}
+          className={`flex-1 ${isMobile ? "h-[38px] px-3 text-sm" : "h-[52px] px-4"} border border-[#e6e7e9] rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#2f5f38] text-gray-900 placeholder:text-gray-400`}
           required
         />
         <button
@@ -326,7 +326,7 @@ function FormSection({ onBack, isMobile = false }: { onBack: () => void; isMobil
             placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className={`flex-1 ${isMobile ? "h-[38px] px-3 text-sm" : "h-[52px] px-4"} border border-[#e6e7e9] rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#2f5f38]`}
+            className={`flex-1 ${isMobile ? "h-[38px] px-3 text-sm" : "h-[52px] px-4"} border border-[#e6e7e9] rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#2f5f38] text-gray-900 placeholder:text-gray-400`}
             required
           />
           <button
@@ -349,7 +349,7 @@ function FormSection({ onBack, isMobile = false }: { onBack: () => void; isMobil
         {["Google", "Microsoft", "Apple"].map((provider) => (
           <button
             key={provider}
-            className={`w-full ${isMobile ? "h-[36px] text-sm" : "h-[54px]"} border border-[#e6e7e9] rounded-lg hover:bg-gray-50 transition flex items-center justify-center gap-2`}
+            className={`w-full ${isMobile ? "h-[36px] text-sm" : "h-[54px]"} border border-[#e6e7e9] rounded-lg hover:bg-gray-50 transition flex items-center justify-center gap-2 text-gray-900`}
           >
             {provider === "Apple" ? <Apple className="w-4 h-4" /> : <span className="font-semibold">{provider[0]}</span>}
             {provider}
@@ -359,10 +359,10 @@ function FormSection({ onBack, isMobile = false }: { onBack: () => void; isMobil
 
       {/* Onboarding Buttons */}
       <div className={`space-y-2 ${isMobile ? "pt-2" : "pt-4"} border-t border-[#e6e7e9]`}>
-        <p className={`text-center ${isMobile ? "text-xs" : "text-sm"} font-medium text-foreground`}>Or start with onboarding</p>
+        <p className={`text-center ${isMobile ? "text-xs" : "text-sm"} font-medium text-gray-900`}>Or start with onboarding</p>
         <div className={`grid grid-cols-2 gap-2 ${isMobile ? "pb-2" : ""}`}>
           <Link href="/signup/individual/onboarding">
-          <button className={`border border-[#e6e7e9] rounded-lg ${isMobile ? "py-1.5 text-xs" : "py-2.5"} font-medium hover:bg-gray-50 transition`}>
+          <button className={`border border-[#e6e7e9] rounded-lg ${isMobile ? "py-1.5 text-xs" : "py-2.5"} font-medium hover:bg-gray-50 transition text-gray-900`}>
             Manual Setup
           </button>
           </Link>
@@ -377,7 +377,7 @@ function FormSection({ onBack, isMobile = false }: { onBack: () => void; isMobil
           <button 
             onClick={triggerResumeUpload}
             disabled={isProcessingResume}
-            className={`border border-[#e6e7e9] rounded-lg ${isMobile ? "py-1.5 text-xs" : "py-2.5"} font-medium hover:bg-gray-50 transition ${isProcessingResume ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`border border-[#e6e7e9] rounded-lg ${isMobile ? "py-1.5 text-xs" : "py-2.5"} font-medium hover:bg-gray-50 transition text-gray-900 ${isProcessingResume ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             {isProcessingResume ? (
               <span className="flex items-center justify-center gap-2">
