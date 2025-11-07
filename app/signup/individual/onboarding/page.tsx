@@ -139,7 +139,7 @@ export default function AIOnboardingPage() {
                 </Button>
               ) : (
                 <Button
-                  onClick={() => router.push("/dashboard")}
+                  onClick={() => router.push("/user")}
                   className="w-full sm:w-auto gap-2 bg-[#2f5f38] hover:bg-[#3b7546] shadow-lg hover:shadow-[#2f5f38]/30 transition-all"
                 >
                   Go to Dashboard <ChevronRight className="w-4 h-4" />
