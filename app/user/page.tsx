@@ -161,6 +161,9 @@ export default function UserDashboard() {
           </div>
           <div className="flex items-center gap-2">
             <ThemeToggle />
+            <Button onClick={() => router.push("/")} size="sm" variant="outline" className="gap-1 text-xs sm:text-sm">
+              Dashboard
+            </Button>
             <Button onClick={() => router.push("/pricing")} size="sm" className="gap-1 bg-primary hover:bg-primary/90 text-xs sm:text-sm">
               <Crown className="w-3 h-3 sm:w-4 sm:h-4" /> Pricing
             </Button>

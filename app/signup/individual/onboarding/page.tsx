@@ -153,7 +153,7 @@ export default function AIOnboardingPage() {
                   onClick={() => router.push("/user")}
                   className="w-full sm:w-auto gap-2 bg-primary hover:bg-primary/90 shadow-lg transition-all"
                 >
-                  Go to Dashboard <ChevronRight className="w-4 h-4" />
+                  Go to Your Profile <ChevronRight className="w-4 h-4" />
                 </Button>
               )}
             </div>
