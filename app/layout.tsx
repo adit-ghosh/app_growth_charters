@@ -9,9 +9,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Growth Charters - AI-Powered Career & Life Success",
+  description:
+    "Personalized AI-driven career and life success scoring to help you grow and expand.",
+  generator: "Growth Charters - AI-Powered Career & Life Success",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
